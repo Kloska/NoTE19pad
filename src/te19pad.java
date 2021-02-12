@@ -3,10 +3,11 @@ import javax.swing.*;
 public class te19pad extends JFrame {
     private JPanel mainPanel;
     private JPanel panel1;
+    private JButton öppnaFil;
+    private JButton Spara;
+    private JButton nyFil;
+    private JPanel NoTE19pad;
     private JTextPane textPane1;
-    private JButton button1;
-    private JButton button2;
-    private JButton button3;
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("te19pad");
