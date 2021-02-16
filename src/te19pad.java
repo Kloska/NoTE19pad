@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class te19pad extends JFrame {
     private JPanel mainPanel;
@@ -7,7 +9,16 @@ public class te19pad extends JFrame {
     private JButton Spara;
     private JButton nyFil;
     private JPanel NoTE19pad;
-    private JTextPane textPane1;
+    private JTextArea textArea1;
+
+    public te19pad() {
+        öppnaFil.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+
+            }
+        });
+    }
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("te19pad");
