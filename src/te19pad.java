@@ -26,8 +26,8 @@ public class te19pad extends JFrame {
                 String text = editorPane1.getText();
                 PrintWriter spara = new PrintWriter
                         (new BufferedWriter
-                        (new OutputStreamWriter
-                         new FileOutputStream("testfil.txt"),"UTF-8")));
+                        (new OutputStreamWriter)
+                (new FileOutputStream("testfil.txt"),"UTF-8")));
 
             }
         });
