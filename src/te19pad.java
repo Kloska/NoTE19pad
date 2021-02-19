@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.*;
 
 public class te19pad extends JFrame {
     private JPanel mainPanel;
@@ -15,6 +16,18 @@ public class te19pad extends JFrame {
         öppnaFil.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
+
+            }
+        });
+        Spara.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                editorPane1.getText();
+                String text = editorPane1.getText();
+                PrintWriter spara = new PrintWriter
+                        (new BufferedWriter
+                        (new OutputStreamWriter
+                         new FileOutputStream("testfil.txt"),"UTF-8")));
 
             }
         });
