@@ -9,7 +9,7 @@ public class te19pad extends JFrame {
     private JButton Spara;
     private JButton nyFil;
     private JPanel NoTE19pad;
-    private JTextArea textArea1;
+    private JEditorPane editorPane1;
 
     public te19pad() {
         öppnaFil.addActionListener(new ActionListener() {
