@@ -24,11 +24,18 @@ public class te19pad extends JFrame {
             public void actionPerformed(ActionEvent actionEvent) {
                 editorPane1.getText();
                 String text = editorPane1.getText();
-                PrintWriter spara = new PrintWriter
-                        (new BufferedWriter
-                        (new OutputStreamWriter)
-                (new FileOutputStream("testfil.txt"),"UTF-8")));
-
+                String filename2 = JOptionPane.showInputDialog(null,"vilken fil vill du spara till?");
+                FileWriter fw = null;
+                try {
+                    fw = new FileWriter(filename2);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                BufferedWriter bw = new BufferedWriter(fw);
+                PrintWriter outFile = new PrintWriter(bw);
+                outFile.println(text);
+                outFile.flush();
+                outFile.close();
             }
         });
     }
