@@ -1,3 +1,5 @@
+package notepad19;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -47,4 +49,5 @@ public class te19pad extends JFrame {
         frame.pack();
         frame.setVisible(true);
     }
+
 }
